@@ -1,10 +1,13 @@
 "use strict";
 
-var fecha = new Date();
+var simbolo1 = Symbol();
+var simbolo2 = Symbol();
 
-console.log(fecha);
-console.log(fecha.getDay());
-console.log(fecha.getHours());
-console.log(fecha.getMinutes());
-fecha.setDate(10)
-console.log(fecha);
+if (simbolo1 == simbolo2) {
+ console.log(true);
+}else {
+ console.log(false);
+}
+
+var ambiente = Symbol('dev');
+console.log(ambiente);
