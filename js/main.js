@@ -17,3 +17,5 @@ var edad = 30;
 var edadtxt = parseInt(edad);
 
 saludar();
+
+const pi = 3.1416;
