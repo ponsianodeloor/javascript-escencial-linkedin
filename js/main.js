@@ -1,13 +1,18 @@
 "use strict";
 
-var simbolo1 = Symbol();
-var simbolo2 = Symbol();
+//JSON Javascript Object Notation Douglas Crockford Javascript The Good Parts
 
-if (simbolo1 == simbolo2) {
- console.log(true);
-}else {
- console.log(false);
-}
+var persona = {nombre: "Ponsiano", twitter: 'ponsianodeloor'};
 
-var ambiente = Symbol('dev');
-console.log(ambiente);
+var personas = [
+ {nombre: "Ponsiano", twitter: 'ponsianodeloor'},
+ {nombre: "Thomas", twitter: 'thomasloor'},
+ {nombre: "PR7", twitter: 'pr7'},
+ persona
+];
+
+//esto sirve para enviar datos a un servidor o guardar localmente
+var personaJson = JSON.stringify(persona);
+
+//esto sirve para recibir datos y parsearlos
+var personaJsonRecibir = JSON.parse(personaJson);
