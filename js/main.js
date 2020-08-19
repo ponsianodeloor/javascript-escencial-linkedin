@@ -1,19 +1,42 @@
 "use strict";
 
-var a = 30;
-var b = 20;
-var c = 40;
+//estructura swicth
 
-var resultado = "Sin datos";
+var edad = 30;
+var resultado = '';
 
-if (a > b) {
- resultado = "La condición se cumplió";
- if (a < c) {
-  resultado = "La condicion anidada se cumplio"
- }
+switch (edad) {
+ case 10:
+  resultado = 'La edad es 10 años';
+  break;
+
+ case 20:
+  resultado = 'La edad es 20 años';
+  break;
+
+ case 30:
+  resultado = 'La edad es 30 años';
+  break;
+ default:
+  resultado = 'ningun caso coincide';
 }
-else {
- resultado = "La condicion no se cumplió";
-}
 
-console.log('el resultado de la evaluacion if-else if -else es ', resultado);
+console.log(resultado);
+
+var producto = "TV";
+
+switch (producto) {
+ case "TV":
+  resultado = 'se eligio la TV';
+  break;
+  case "Radio":
+   resultado = 'se eligio la Radio';
+   break;
+   case "Telefono":
+    resultado = 'se eligio la Telefono';
+    break;
+ default:
+ resultado = 'No se eligio un producto';
+
+}
+console.log(resultado);
