@@ -1,8 +1,17 @@
 "use strict";
 
-var a = 10;
-var b = 20;
+var a = 10; //number
+var b = "Playa"; //string
+var activo = false; //boolean
 
-var resultado = a > b ? "la variable a es mayor" : "la variable a es menor";
+var persona = {
+ edad: 30, //number
+ deporte: "correr" //string
+}; //objeto
 
-console.log(resultado);
+console.log(typeof(a));
+console.log(typeof(b));
+console.log(typeof(activo));
+console.log(typeof(persona));
+console.log(typeof(persona.edad));
+console.log(typeof(persona.deporte));
