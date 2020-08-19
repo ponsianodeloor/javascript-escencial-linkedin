@@ -1,17 +1,17 @@
 "use strict";
 
-var a = 10; //number
-var b = "Playa"; //string
-var activo = false; //boolean
+var a = 10;
+var b = 20;
 
-var persona = {
- edad: 30, //number
- deporte: "correr" //string
-}; //objeto
+var resultado = "Sin datos";
 
-console.log(typeof(a));
-console.log(typeof(b));
-console.log(typeof(activo));
-console.log(typeof(persona));
-console.log(typeof(persona.edad));
-console.log(typeof(persona.deporte));
+if (a > b) {
+ resultado = "La condición se cumplió";
+}else if (a == b) {
+ resultado = "La segunda condicion se verdadera ";
+}
+else {
+ resultado = "La condicion no se cumplió";
+}
+
+console.log('el resultado de la evaluacion if-else if -else es ', resultado);
