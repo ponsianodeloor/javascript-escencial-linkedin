@@ -1,14 +1,16 @@
 "use strict";
 
-var a = 10;
+var a = 30;
 var b = 20;
+var c = 40;
 
 var resultado = "Sin datos";
 
 if (a > b) {
  resultado = "La condición se cumplió";
-}else if (a == b) {
- resultado = "La segunda condicion se verdadera ";
+ if (a < c) {
+  resultado = "La condicion anidada se cumplio"
+ }
 }
 else {
  resultado = "La condicion no se cumplió";
