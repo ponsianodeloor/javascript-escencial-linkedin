@@ -1,26 +1,13 @@
 "use strict";
 
-//functions arrows || fat arrow || Lambda
+const boton = document.querySelector('.boton');
 
-var saludar = nombre => "Hola " + nombre;
+boton.addEventListener('click', function(){
+ //console.log('Boton pulsado');
+ console.log(this.innerHTML);
+});
 
-console.log(saludar('Ponsiano'));
-
-var sumar = cantidad => cantidad + 20;
-console.log(sumar(10));
-
-var calcular = (a, b) => a+b;
-console.log(calcular(15, 20));
-
-var generar = (a, b) => {
- var c = 5;
- return a+b+c;
-}
-
-console.log(generar(6,7));
-
-var validar = () => {
- return 'validacion correcta';
-}
-
-console.log(validar());
+boton.addEventListener('click', () => {
+ console.log(this);
+ this.location = 'https://apptics.com.ec'
+});
