@@ -1,42 +1,25 @@
 "use strict";
 
-//estructura swicth
+var productos = 5;
+var contar_impares = 0;
 
-var edad = 30;
-var resultado = '';
-
-switch (edad) {
- case 10:
-  resultado = 'La edad es 10 años';
-  break;
-
- case 20:
-  resultado = 'La edad es 20 años';
-  break;
-
- case 30:
-  resultado = 'La edad es 30 años';
-  break;
- default:
-  resultado = 'ningun caso coincide';
+for (var i = 0; i < productos; i++) {
+ console.log("Producto #", i);
 }
 
-console.log(resultado);
+do{
+ console.log('Producto vendido');
+ productos--;
+ debugger;
+}while(productos >= 1)
 
-var producto = "TV";
-
-switch (producto) {
- case "TV":
-  resultado = 'se eligio la TV';
+for (var i = 0; i <= 20; i++) {
+ if (i == 10) {
   break;
-  case "Radio":
-   resultado = 'se eligio la Radio';
-   break;
-   case "Telefono":
-    resultado = 'se eligio la Telefono';
-    break;
- default:
- resultado = 'No se eligio un producto';
-
+ }
+ if (i % 2 == 0) {
+   continue;
+ }
+ contar_impares++;
+ console.log(i);
 }
-console.log(resultado);
