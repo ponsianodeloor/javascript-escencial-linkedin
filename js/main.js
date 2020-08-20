@@ -1,23 +1,26 @@
 "use strict";
 
-//callbacks
+//functions arrows || fat arrow || Lambda
 
-function calcular(a, b, sumarCB, restarCB){
- var suma = a + b;
- var resta = a - b;
- sumarCB(suma);
- restarCB(resta);
+var saludar = nombre => "Hola " + nombre;
+
+console.log(saludar('Ponsiano'));
+
+var sumar = cantidad => cantidad + 20;
+console.log(sumar(10));
+
+var calcular = (a, b) => a+b;
+console.log(calcular(15, 20));
+
+var generar = (a, b) => {
+ var c = 5;
+ return a+b+c;
 }
 
-calcular(
- 2,
- 3,
- function(resultado){
-  console.log('Suma ', resultado);
- },
- function(resultado){
-  console.log('Resta ', resultado)
- }
-);
+console.log(generar(6,7));
 
-//calular(1,2,fn,fn);
+var validar = () => {
+ return 'validacion correcta';
+}
+
+console.log(validar());
