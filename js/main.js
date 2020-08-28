@@ -21,3 +21,8 @@ window.addEventListener("keypress", function(event){
 window.addEventListener("keyup", function(event){
  console.log("keyup tecla");
 });
+
+//evento de carga del documento
+window.addEventListener("load", function(event){
+ console.log("El contenido de la ventana se ha cargado");
+});
