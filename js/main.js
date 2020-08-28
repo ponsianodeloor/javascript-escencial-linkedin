@@ -1,19 +1,23 @@
 "use strict";
 
-const boton = document.querySelector('.boton');
+/*
+ eventos del teclado
+  keydown
+  keypress
+  keyup
+*/
 
 
-boton.addEventListener('click', function(){
- console.log('Boton pulsado');
- //console.log(this.innerHTML);
+window.addEventListener("keydown", function(event){
+ console.log("keydown tecla");
+ console.log(event.keyCode);
+ console.log(String.fromCharCode(event.keyCode));
 });
 
-boton.addEventListener('mouseover', function(){
- console.log('El mouse esta sobre el boton');
- //console.log(this.innerHTML);
+window.addEventListener("keypress", function(event){
+ console.log("keypress tecla");
 });
 
-boton.addEventListener('mouseout', function(){
- console.log('El mouse esta fuera el boton');
- //console.log(this.innerHTML);
+window.addEventListener("keyup", function(event){
+ console.log("keyup tecla");
 });
