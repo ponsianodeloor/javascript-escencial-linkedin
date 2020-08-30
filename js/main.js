@@ -1,18 +1,13 @@
 "use strict";
 
-//ventana de alerta
+console.log("MAX_VALUE: ", Number.MAX_VALUE);
 
-var video = document.querySelector(".laravelVideo");
+console.log("MIN_VALUE: ", Number.MIN_VALUE);
 
-video.addEventListener('ended', function functionName() {
- //alert('Video Finalizado \n salto de linea'); //alerta
- let resultado = confirm("Deseas ver el video nuevamente");
- console.log(resultado); //true o false
- if (resultado) {
-  var email = prompt('Escribe tu email para ver mas videos');
-  console.log(email);
-  video.play();
- }else {
-  window.location = "https://apptics.com.ec"
- }
-});
+console.log("MAX_VALUE: ", Number.MIN_VALUE);
+
+console.log("NEGATIVE_INFINITY: ", Number.NEGATIVE_INFINITY);
+
+console.log("POSITIVE_INFINITY: ", Number.POSITIVE_INFINITY);
+
+console.log("NaN: ", Number.NaN);
