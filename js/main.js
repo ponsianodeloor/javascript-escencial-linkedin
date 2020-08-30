@@ -1,16 +1,25 @@
 "use strict";
 
-//eventos multimedia
-const video = document.querySelector('.laravelVideo');
+//temporizadores o timers
 
-video.addEventListener("play", function(){
- console.log('El video ha iniciado');
-});
+//set interval se cicla
 
-video.addEventListener("seeking", function(){
- console.log('Se esta buscando en el video', this.currentTime);
-});
+var temporizador = setInterval(function () {
+ setColor();
+}, 2000);
 
-video.addEventListener("ended", function(){
- console.log('El video ha terminado');
-});
+//set timeout solo ocurre una vez
+/*
+setTimeout(function () {
+ setColor();
+}, 3000);
+*/
+
+function setColor(){
+ var pagina = document.body;
+ pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "green" : "blue";
+}
+
+function stopChangeColor(){
+ clearInterval(temporizador);
+}
