@@ -1,13 +1,10 @@
 "use strict";
 
-console.log("MAX_VALUE: ", Number.MAX_VALUE);
+//metodos numericos
+var numero = 2.5;
 
-console.log("MIN_VALUE: ", Number.MIN_VALUE);
-
-console.log("MAX_VALUE: ", Number.MIN_VALUE);
-
-console.log("NEGATIVE_INFINITY: ", Number.NEGATIVE_INFINITY);
-
-console.log("POSITIVE_INFINITY: ", Number.POSITIVE_INFINITY);
-
-console.log("NaN: ", Number.NaN);
+console.log("toExponential", numero.toExponential(4));
+console.log("toFixed", numero.toFixed(2)); //para manejar 2 decimales
+console.log("toPrecision", numero.toPrecision(6));
+console.log("toString", numero.toString());
+console.log(typeof(numero.toString()))
