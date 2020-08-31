@@ -1,6 +1,5 @@
 "use strict";
 
-//cadena de texto
-
-var pais = "comida";
-var comida = new String("Ceviche");
+//medir una cadena de texto
+var mensaje = 'Ponsiano De Loor';
+console.log("La cadena de texto tiene " + mensaje.length + " letras");
