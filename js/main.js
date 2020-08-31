@@ -1,21 +1,26 @@
 "use strict";
 
-var mensaje = "Estoy aprendiendo Javascript y aprendiendo bien";
+var mensaje = "   Estoy aprendiendo Javascript y aprendiendo bien   ";
 
 var resultado;
 
-//startsWith comienza con
-resultado = mensaje.startsWith("Es"); //devuelve true
-console.log("startsWith: " + resultado);
+//repeat
+resultado = mensaje.repeat(2);
+console.log(resultado); //realiza las repeticiones
 
-var textoEn = mensaje.indexOf("Javascript");
-resultado = mensaje.startsWith("Ja", textoEn); //busqueda a partir de posicion
+//replace
+resultado = mensaje.replace("Javascript", "a programar");
 console.log(resultado);
 
-//endsWith termina con
-resultado = mensaje.endsWith("bien"); //devuelve true
-console.log("endsWith: " + resultado);
+//slice
+//resultado = mensaje.slice(6);
+resultado = mensaje.slice(6, mensaje.length - 25);
+console.log(resultado);
 
-//includes
-resultado = mensaje.includes("Javascript");
-console.log("Includes: " + resultado);
+//split
+resultado = mensaje.split(" ");
+console.log(resultado);
+
+//trim
+resultado = mensaje.trim();
+console.log(resultado);
