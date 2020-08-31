@@ -4,18 +4,16 @@ var mensaje = "Estoy aprendiendo Javascript y aprendiendo bien";
 
 var resultado;
 
-//indexof
-resultado = mensaje.indexOf('aprendiendo'); //nos encuentra la primera incidencia ASC
-console.log('indexOf ' + resultado);
+//match
+resultado = mensaje.match(/aprendiendo/gi); //operador g que es global buscar todas y in case sensitive
+console.log("match: " + resultado);
 
-//lastIndexof
-resultado = mensaje.lastIndexOf('aprendiendo'); //nos encuentra la primera incidencia DESC
-console.log('lastIndexOf ' + resultado);
-
-//search
-resultado = mensaje.search('aprendiendo'); //nos encuentra la primera incidencia
-console.log('search ' + resultado);
-
-//search
-resultado = mensaje.search(/ja/i); // la i es para in case sensitive
-console.log('search case sensitive ' + resultado);
+//substr
+resultado = mensaje.substr(6,11); // devuelve aprendiendo
+console.log("substr: " + resultado);
+//substring
+resultado = mensaje.substring(6,17); // devuelve aprendiendo y empieza desde la cadena
+console.log("sustring: " + resultado);
+//charAt
+resultado = mensaje.charAt(3); //devuelve o
+console.log("charAt: " + resultado);
