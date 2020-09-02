@@ -1,6 +1,9 @@
 "use strict";
 
-var platillos = ["ceviche", "bolon", "fideos"];
-var bebidas = new Array("Limonada", "Rosa", "Piña");
+var platillos = ["Ceviche", "Bolon", "Fideos"];
 
-console.log(platillos, bebidas);
+console.log("hay " + platillos.length + " platillos en el menu");
+
+var platillo = platillos[0];
+
+console.log("El platillo seleccionado es: " + platillo);
