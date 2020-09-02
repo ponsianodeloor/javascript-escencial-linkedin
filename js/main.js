@@ -2,16 +2,16 @@
 
 //operaciones basicas en un arreglo
 
-var platillos = ["Ceviche", "Bolon", "Fideos"];
+//split()
+var mensaje = "Ceviche, Tacos, pasta";
+var platillos = mensaje.split(', ');
 console.log(platillos);
 
-platillos.push("Tostadas");
-platillos.push("Sopa");
-
+//from
+var platillosHTML = Array.from(document.querySelectorAll(".platillos p"));
+platillos = platillosHTML.map(platillo => platillo.textContent)
 console.log(platillos);
 
-platillos.pop();
+//of
+platillos = Array.of("Ceviche", "Tacos", "Pasta");
 console.log(platillos);
-
-var mensaje = platillos.join();
-console.log(mensaje);
