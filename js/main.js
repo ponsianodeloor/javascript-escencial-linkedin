@@ -1,12 +1,17 @@
 "use strict";
 
-//arreglos multidimencional
+//operaciones basicas en un arreglo
 
 var platillos = ["Ceviche", "Bolon", "Fideos"];
-var bebidas = ["limonada", "fresa"];
+console.log(platillos);
 
-var menu = [platillos, bebidas]
+platillos.push("Tostadas");
+platillos.push("Sopa");
 
-console.log(menu);
+console.log(platillos);
 
-console.log(menu[1][1]);
+platillos.pop();
+console.log(platillos);
+
+var mensaje = platillos.join();
+console.log(mensaje);
