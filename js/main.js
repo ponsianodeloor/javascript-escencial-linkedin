@@ -1,9 +1,12 @@
 "use strict";
 
+//arreglos multidimencional
+
 var platillos = ["Ceviche", "Bolon", "Fideos"];
+var bebidas = ["limonada", "fresa"];
 
-console.log("hay " + platillos.length + " platillos en el menu");
+var menu = [platillos, bebidas]
 
-var platillo = platillos[0];
+console.log(menu);
 
-console.log("El platillo seleccionado es: " + platillo);
+console.log(menu[1][1]);
