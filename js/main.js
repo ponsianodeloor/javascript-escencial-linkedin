@@ -1,16 +1,15 @@
 "use strict";
 
-var mensaje = "Estoy aprendiendo Javascript y ";
-var mensaje2 = "aprendiendo bien";
-var total = 123456;
+var lenguaje = "Javascript";
+var lenguaje2 = "HTML";
 
-var resultado;
+var mensaje = `Me gusta ${lenguaje} y su integracion con el lenguaje ${lenguaje2}`;
 
-resultado = mensaje.toLowerCase();
-console.log(resultado);
+console.log(mensaje);
 
-resultado = mensaje.toUpperCase();
-console.log(resultado);
+var mensajeMultilinea = `
+ Hola mundo
+ Estoy aprendiendo ${lenguaje}
+ y me gusta como se integra con ${lenguaje2} y CSS`;
 
-resultado = mensaje.concat(mensaje2, ' y tengo muchas ideas');
-console.log(resultado);
+console.log(mensajeMultilinea);
