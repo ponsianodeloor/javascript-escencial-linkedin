@@ -14,11 +14,15 @@ boton.addEventListener('click', function(){
   return getCountries();
  }).then(data => data.json()).then(countries =>{
   mostrarBanderas(countries);
+ }).catch(error => {
+     mensaje.classList.toggle('hide');
+     mensaje.innerHTML = error;
+     setTimeout(()=>mensaje.classList.toggle('hide'), 5000);
  });
 });
 
 function getPost(){
- return fetch("https://jsonplaceholder.typicode.com/posts");
+ return fetch("https://jsonplaceholder.typicode.comm/posts");
 }
 
 function getCountries(){
