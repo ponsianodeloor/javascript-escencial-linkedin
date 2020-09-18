@@ -1,7 +1,7 @@
 "use strict";
 
-//Filtrar arreglos
-
+//Validación de elementos de un arreglo
+var resultado = null;
 var menu = [
  {nombre: "Ceviche", precio: 20, pais:"Ecuador"},
  {nombre: "Tacos", precio: 30, pais:"Mexico"},
@@ -9,8 +9,9 @@ var menu = [
  {nombre: "frejoles", precio: 15, pais:"Mexico"}
 ];
 
-var resultado = null;
-resultado = menu.find(platillo => platillo.pais == "Mexico");
-console.log(resultado);
-resultado = menu.filter(platillo => platillo.pais == "Mexico");
-console.log(resultado);
+resultado = menu.some(platillo => platillo.precio < 20);
+console.log('Hay platillos de 20 Dolares', resultado);
+
+
+resultado = menu.every(platillo => platillo.precio < 50);
+console.log('Hay platillos que cuesten menos de 50 Dolares', resultado);
