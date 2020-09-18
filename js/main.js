@@ -1,7 +1,7 @@
 "use strict";
 
-//Iterando con arreglos for
+//Iterando con arreglos foreach
 var platillos = ["Ceviche", "Tacos", "pasta"];
-for (let platillo in platillos) {
- console.log(platillos[platillo]);
-}
+platillos.forEach((platillo, i) => {
+ console.log(i + " " + platillos);
+});
