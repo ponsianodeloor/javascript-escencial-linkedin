@@ -1,12 +1,17 @@
 "use strict";
 
-//manejo de errores
+//errores personalizados
+var valor1 = 10;
+var valor2 = 20;
+
 try {
-  //var array = new array(1000000000);
-  x = y;
+ if (valor1 > valor2) {
+  console.log(`mensaje de validacion ${valor1} es mayor que ${valor2}`);
+ }else {
+  throw new Error(`${valor1} no es mayor que ${valor2}`);
+ }
 } catch (e) {
- console.log(e.message);
- console.log(e.name);
+ console.log(e);
 } finally {
 
 }
